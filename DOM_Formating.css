@@ -1,0 +1,206 @@
+body{
+    background-color: #F4F6F7;
+}
+
+/*FONTS*/
+#Question {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#PLAY{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#PLAY_AGAIN{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.number8{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+#QUESTION_string{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+#Answer{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*FONTS - END*/
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Elements from .navbox*/
+.navbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.launcher{
+    display: flex;
+    gap: 0.5em;
+}
+
+#PLAY{
+    width: 3rem;
+    height: 3rem;
+}
+
+#PLAY_AGAIN{
+    width: 3rem;
+    height: 3rem;
+}
+/*Elements from .navbox* - END*/
+
+/*Elements from .eightBall */
+.eightBall{
+    background-color: black;
+    height: 60vh;
+    width: 60vh;
+    place-self: center;
+    border-radius: 50%;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.5fr 2fr 1fr;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
+}
+
+.circle_number8{
+    justify-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    height: 20vh;
+    width: 20vh;
+
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#cursorBox{
+    position: relative;
+}
+.number8{
+    position: relative;
+}
+
+.answer_slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    grid-column: 2;
+    grid-row: 4;
+}
+/*Elements from .eightBall* - END*/
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 800px)  and (orientation: portrait) {
+    .container{
+        gap: 3rem;
+    }
+    .navbox{
+        gap: 5rem;
+    }
+    #input_box{
+        max-width: 20vh;
+    }
+    .eightBall{
+        height: 30vh;
+        width: 30vh;
+    }
+    .circle_number8 {
+        height: 10vh;
+        width: 10vh;
+    }
+    .number8 {
+        font-size: 2rem;
+    }
+
+    /* Fonts Mobile device */
+    #Question {
+        font-size: 0.7rem;
+    }
+    
+    #PLAY{
+        font-size: 0.7rem;
+    }
+    #PLAY_AGAIN{
+        font-size: 0.7rem;
+    }
+
+    .number8{
+        font-size: 2rem;
+    }
+
+    #QUESTION_string{
+        font-size: 0.6rem;
+    }
+    
+    #Answer{
+        font-size: 0.7em
+    }
+    /* Fonts Mobile device */ 
+}
+
+
+@media (max-height: 900px) and (orientation: landscape) {
+   
+    .navbox{
+        gap: 16rem;
+    }
+    #input_box{
+        width: 15vh;
+    }
+     /* Fonts Mobile device */
+     #Question {
+        font-size: 0.7rem;
+    }
+    
+    #PLAY{
+        font-size: 0.7rem;
+    }
+    #PLAY_AGAIN{
+        font-size: 0.7rem;
+    }
+
+    .number8{
+        font-size: 2rem;
+    }
+
+    #QUESTION_string{
+        font-size: 0.6rem;
+    }
+    
+    #Answer{
+        font-size: 0.7em
+    }
+    /* Fonts Mobile device */ 
+} 
+
+/* END - MOBILE RESPONSIVE */

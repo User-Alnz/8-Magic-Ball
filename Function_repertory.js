@@ -48,7 +48,6 @@ export function ft_store_str_in_array(var_text_from_nodes_to_store, var_array_to
 {
     // Function is used only to store one string ! 
     // var var_array_to_store_data => /!\ Argument must be declared as an array /!\ 
-
     if (var_array_to_store_data[0] != null)
     {
         console.log("Error with  - ft_store_str_in_array - No more room avialable")
@@ -61,7 +60,7 @@ export function ft_store_str_in_array(var_text_from_nodes_to_store, var_array_to
 
 export function ft_copy_str_to(src_input_string, dst_document_node)
 {
-    let Temporary_store_string;
+    let     Temporary_store_string;
 
     Temporary_store_string = src_input_string.value;
     dst_document_node.innerText = Temporary_store_string;

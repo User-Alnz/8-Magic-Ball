@@ -35,7 +35,7 @@ button_play.addEventListener("click", () =>{
         else{
                 ft_run_eightBall_game(answer_string);
                 ft_circle_animation(radius_axis_X, radius_axis_Y, element_animated[0]);
-                ft_move_element_from_right_and_left(horizontal_axis, box_to_animate_on_horizontal_axis);
+                ft_move_element_from_right_and_left(horizontal_axis, box_containing_animation[0]);
             }
 });
 

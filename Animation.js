@@ -20,7 +20,7 @@ export function ft_circle_animation(const_radius_axis_X, const_radius_axis_Y, va
         var_element_to_animate.style.left = `${position_of_P_on_Horizontal_axis_X}px`;
         var_element_to_animate.style.top = `${position_of_P_on_Vertical_axis_Y}px`;
 
-        if( angle > 8 * Math.PI)
+        if( angle > 6 * Math.PI)
         {
             cancelAnimationFrame(run_animatiom);
             angle = 0;
@@ -37,8 +37,8 @@ export function ft_circle_animation(const_radius_axis_X, const_radius_axis_Y, va
 
 export function ft_move_element_from_right_and_left(const_horizontal_axis, box_to_animate_on_horizontal_axis)
 {
-    var flag_forward;
-    var flag_backward;
+    var     flag_forward;
+    var     flag_backward;
 
     flag_forward = false;
     flag_backward = false;
@@ -49,7 +49,7 @@ export function ft_move_element_from_right_and_left(const_horizontal_axis, box_t
 
         if (length < (const_horizontal_axis * 1/3) && flag_forward === false)
         {
-            length += 8;
+            length += 3;
             if(length >= (const_horizontal_axis * 1/3))
             {
                 flag_forward = true;
@@ -57,7 +57,7 @@ export function ft_move_element_from_right_and_left(const_horizontal_axis, box_t
         } 
         else if(length > (const_horizontal_axis * 1/3) - (const_horizontal_axis * 2/3) && flag_forward == true && flag_backward === false )
         {
-            length -= 8;
+            length -= 3;
             if( length  <= (const_horizontal_axis * 1/3) - (const_horizontal_axis * 2/3))
             {
                 flag_backward = true;
@@ -65,7 +65,7 @@ export function ft_move_element_from_right_and_left(const_horizontal_axis, box_t
         }
         else if (length < 0 && flag_backward === true)
         {
-            length += 8;
+            length += 3;
             if(length >=0)
             { 
             cancelAnimationFrame(run_move_element);

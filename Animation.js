@@ -1,4 +1,3 @@
-
 let     angle;
 let     length
 let     run_animatiom;

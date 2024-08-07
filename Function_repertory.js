@@ -72,4 +72,3 @@ export function Limit_Input_maxLength(input_string, int_length_limit) {
         input_string.value = input_string.value.substring(0,int_length_limit);
     }
 }
-

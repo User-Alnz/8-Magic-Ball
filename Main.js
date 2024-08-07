@@ -7,7 +7,6 @@ let output_string = document.getElementById("QUESTION_string");
 const button_play = document.getElementById("PLAY");
 const button_play_again = document.getElementById("PLAY_AGAIN");
 const box_containing_animation = document.getElementsByClassName("circle_number8");
-const box_to_animate_on_horizontal_axis = document.getElementById("cursorBox");
 const element_animated = document.getElementsByClassName("number8");
 let answer_string = document.getElementById("Answer");
 
@@ -43,5 +42,3 @@ button_play_again.addEventListener("click",()=>{
 
     ft_reset_game_fields(input_string, output_string, answer_string, temp_memory[0]);
 });
-
-
